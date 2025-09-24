@@ -1,14 +1,14 @@
-import Todo from "./components/Todo"
-
+// import TodoBefore from './components/TodoBefore';
+import Todo from './components/Todo';
+import { TodoProvider } from './context/todoContext';
 
 function App() {
-  
-
-  return (
-    <>
-      <Todo></Todo>
-    </>
-  )
+    return (
+        <TodoProvider>
+            <Todo></Todo>
+            {/* <TodoBefore></TodoBefore> */}
+        </TodoProvider>
+    );
 }
 
-export default App
+export default App;
